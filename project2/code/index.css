@@ -1,0 +1,9 @@
+#programokbtn1{
+    background-color: #F8FAFF;
+    color: black;
+    border-color: #F8FAFF;
+}
+
+#programokbtn1:hover{
+    background-color: #909aad;
+}
