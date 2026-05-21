@@ -1,9 +1,105 @@
-#programokbtn1{
+/*------HEADER-----*/
+header{
+    background-color: #0D1F3F;
+    height: 100px;
+    padding:2.5px 0px;
+    position: sticky;
+    top: 0;
+}
+.nav-logo img{
+    display: block;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navbar-container a{
+    text-decoration: none;
+    color: white;
+}
+.navbar-container a:hover{
+    color:rgb(139, 139, 139) ;
+}
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+/*------BODY------*/
+
+#indexfokep{
+    background-image: url(../media/lilaur.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 680px;
+    gap: 220px;
+    justify-content: flex-end;
+    padding-bottom: 80px;
+}
+#indexfokep h1{
+    color: white;
+}
+#programokbtn1, #programokbtn1 a{
     background-color: #F8FAFF;
     color: black;
     border-color: #F8FAFF;
+    text-decoration: none;
 }
 
-#programokbtn1:hover{
+#programokbtn1:hover, #programokbtn1 a:hover{
     background-color: #909aad;
+}
+h2{
+    padding: 30px;
+}
+
+
+
+/*------FOOTER------*/
+
+footer{
+    background-color: #0D1F3F;
+    padding: 30px;
+}
+.container {
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 1fr 1fr;
+    min-height: 150px; 
+}
+
+.footerli {
+    text-align: center;
+    padding: 5px;
+    list-style-type: none;
+}
+
+.footerli, .footerli strong {
+    color: white; 
+}
+
+.footerli a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerli a:hover {
+    color: rgb(139, 139, 139);
+}
+
+
+.footer-content-left, 
+.footer-content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
