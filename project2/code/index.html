@@ -1,63 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lumen</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMEN Planetárium</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-      <header class="navbar">
-<div class="logo">
-  <img src="../media/logo.png" alt="LUMEN Logo" class="logo-img">
-  <span>LUMEN</span>
-</div>
+
+
+  <header class="navbar">
+
+    <div class="logo">
+      <img src="../media/logo.png" alt="LUMEN Logo" class="logo-img">
+    </div>
 
     <nav>
       <ul class="nav-links">
-        <li><a href="programs.html">Programok</a></li>
-        <li><a href="tickets.html">Jegyek</a></li>
-        <li><a href="gallery.html">Galéria</a></li>
-        <li><a href="about.html">Rólunk</a></li>
-        <li><a href="contact.hmtl">Kapcsolat</a></li>
+        <li><a href="#">Programok</a></li>
+        <li><a href="#">Jegyek</a></li>
+        <li><a href="#">Galéria</a></li>
+        <li><a href="About.html">Rólunk</a></li>
+        <li><a href="#">Kapcsolat</a></li>
       </ul>
     </nav>
 
   </header>
-    <section>
-        <div id="indexfokep">
-            <h1 class="text-center display-1"><strong>FEDEZD FEL AZ UNIVERZUMOT</strong></h1>
-            <div class="d-grid gap-2 col-4 mx-auto">
-                <a id="programokbtn1" class="btn btn-primary" href="programs.html" role="button"><strong>Programok</strong></a>
-            </div>
+
+
+  <section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>Fedezd fel az Univerzumot!</h1>
+
+      <a href="#" class="hero-btn">
+        Programok
+      </a>
+    </div>
+
+  </section>
+
+
+  <section class="programs">
+
+    <h2>Aktuális Programjaink</h2>
+
+    <div class="program-card">
+
+      <img src="../media/feketelyuk.png" alt="Black Hole">
+
+      <div class="program-content">
+
+        <h3>AZ UNIVERZUM SÖTÉT OLDALA</h3>
+
+        <p>
+          Fedezd fel a fekete lyukak titokzatos világát!
+          Egy lenyűgöző utazás során megismerheted az univerzum
+          legerősebb és legveszélyesebb objektumait.
+        </p>
+
+        <hr>
+
+        <div class="program-footer">
+
+          <span>Időpont: 2026. május 28. • 19:30</span>
+
+          <a href="#" class="details-btn">
+            Részletek
+          </a>
+
         </div>
-    </section>
-    <h2 class="text-center"><strong>Aktuális Programjaink</strong></h2>
-    <section>
-      <div>
 
       </div>
-      <div>
 
+    </div>
+
+  </section>
+
+
+  <footer class="footer">
+
+    <div class="footer-left">
+      <p>@ LUMEN Inc.</p>
+      <a href="#">Kapcsolat</a>
+      <a href="#">Rólunk</a>
+    </div>
+
+    <div class="footer-right">
+
+      <div class="social">
+        <span>📷</span>
+        <p>@lumen</p>
       </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="footer-content-left">
-          <li class="footerli"><strong>&copy;LUMEN Inc.</strong></li>
-          <li class="footerli"><strong><a href="contact.html">Kapcsolat</a></strong></li>
-          <li class="footerli"><strong><a href="about.html">Rólunk</a></strong></li>
-        </div>
-        <div class="footer-content-right">
-          <li class="footerli"><a href=""><i class="bi bi-instagram fs-4"></i> @lumen</a></li>
-          <li class="footerli"><a href=""><i class="bi bi-tiktok fs-4"></i> @lumen</a></li>
-          <li class="footerli"><a href=""><i class="bi bi-facebook fs-4"></i> @lumen</a></li>
-          <li class="footerli"><a href=""><i class="bi bi-twitter-x fs-4"></i> @lumen</a></li>
-        </div>
+
+      <div class="social">
+        <span>🎵</span>
+        <p>@lumen</p>
       </div>
-    </footer>
+
+      <div class="social">
+        <span>📘</span>
+        <p>@lumen</p>
+      </div>
+
+      <div class="social">
+        <span>✕</span>
+        <p>@lumen</p>
+      </div>
+
+    </div>
+
+  </footer>
+
 </body>
 </html>
