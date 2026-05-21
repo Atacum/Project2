@@ -4,13 +4,6 @@
   box-sizing:border-box;
 }
 
-/* BODY */
-body{
-  font-family:Arial, Helvetica, sans-serif;
-  background:#ececec;
-  color:white;
-}
-
 /* NAVBAR */
 .navbar{
   width:100%;
@@ -21,13 +14,6 @@ body{
   align-items:center;
   padding:0 40px;
   border-bottom:3px solid #00a2ff;
-}
-
-/* LOGO */
-.logo-img{
-  height:70px;
-  width:auto;
-  object-fit:contain;
 }
 
 /* NAV LINKS */
@@ -47,6 +33,21 @@ body{
 .nav-links a:hover{
   color:#84c8ff;
 }
+
+/* BODY */
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:#ececec;
+  color:white;
+}
+
+/* LOGO */
+.logo-img{
+  height:70px;
+  width:auto;
+  object-fit:contain;
+}
+
 
 /* HERO */
 .hero{
@@ -158,25 +159,54 @@ body{
   margin:40px 0;
 }
 
-/* FOOTER */
-.program-footer{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:20px;
+/*------FOOTER------*/
+
+footer{
+    margin-top: 20px;
+    background-color: #0D1F3F;
+    padding: 30px;
+}
+.container {
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 1fr 1fr;
+    min-height: 150px; 
 }
 
-.program-footer span{
-  font-size:1.3rem;
-  font-weight:700;
+.footerli {
+    text-align: center;
+    padding: 5px;
+    list-style-type: none;
 }
 
+.footerli, .footerli strong {
+    color: white; 
+}
+
+.footerli a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerli a:hover {
+    color: rgb(139, 139, 139);
+}
+
+
+.footer-content-left, 
+.footer-content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* DETAILS BUTTON */
 .details-btn{
+    padding-left: 20;
   text-decoration:none;
   background:#d9d9d9;
   color:#031b4e;
-  padding:12px 30px;
+     padding:12px 30px;
   border-radius:20px;
   font-size:1.3rem;
   font-weight:700;
@@ -185,28 +215,6 @@ body{
 
 .details-btn:hover{
   background:white;
-}
-
-/* FOOTER */
-.footer{
-  background:#031b4e;
-  width:100%;
-  padding:40px 80px;
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-}
-
-/* LEFT */
-.footer-left{
-  display:flex;
-  flex-direction:column;
-  gap:15px;
-}
-
-.footer-left a{
-  color:white;
-  text-decoration:none;
 }
 
 /* RIGHT */
