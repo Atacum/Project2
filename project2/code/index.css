@@ -1,105 +1,287 @@
-/*------HEADER-----*/
-header{
-    background-color: #0D1F3F;
-    height: 100px;
-    padding:2.5px 0px;
-    position: sticky;
-    top: 0;
-}
-.nav-logo img{
-    display: block;
-}
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.navbar-container a{
-    text-decoration: none;
-    color: white;
-}
-.navbar-container a:hover{
-    color:rgb(139, 139, 139) ;
-}
-.nav-links {
-    display: flex;
-    list-style-type: none;
-    gap: 30px;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-/*------BODY------*/
-
-#indexfokep{
-    background-image: url(../media/lilaur.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 680px;
-    gap: 220px;
-    justify-content: flex-end;
-    padding-bottom: 80px;
-}
-#indexfokep h1{
-    color: white;
-}
-#programokbtn1, #programokbtn1 a{
-    background-color: #F8FAFF;
-    color: black;
-    border-color: #F8FAFF;
-    text-decoration: none;
+/* BODY */
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:#ececec;
+  color:white;
 }
 
-#programokbtn1:hover, #programokbtn1 a:hover{
-    background-color: #909aad;
-}
-h2{
-    padding: 30px;
-}
-
-
-
-/*------FOOTER------*/
-
-footer{
-    background-color: #0D1F3F;
-    padding: 30px;
-}
-.container {
-    display: grid;
-    grid-template-areas: "left right";
-    grid-template-columns: 1fr 1fr;
-    min-height: 150px; 
+/* NAVBAR */
+.navbar{
+  width:100%;
+  height:90px;
+  background:#031b4e;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 40px;
+  border-bottom:3px solid #00a2ff;
 }
 
-.footerli {
-    text-align: center;
-    padding: 5px;
-    list-style-type: none;
+/* LOGO */
+.logo-img{
+  height:70px;
+  width:auto;
+  object-fit:contain;
 }
 
-.footerli, .footerli strong {
-    color: white; 
+/* NAV LINKS */
+.nav-links{
+  display:flex;
+  gap:40px;
+  list-style:none;
 }
 
-.footerli a {
-    text-decoration: none;
-    color: white;
+.nav-links a{
+  text-decoration:none;
+  color:white;
+  font-weight:700;
+  transition:0.3s;
 }
 
-.footerli a:hover {
-    color: rgb(139, 139, 139);
+.nav-links a:hover{
+  color:#84c8ff;
 }
 
+/* HERO */
+.hero{
+  position:relative;
+  width:100%;
+  height:650px;
+  background:url("../media/lilaur.jpg") center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-bottom:3px solid #00a2ff;
+}
 
-.footer-content-left, 
-.footer-content-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* OVERLAY */
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.2);
+}
+
+/* HERO CONTENT */
+.hero-content{
+  position:relative;
+  z-index:2;
+  text-align:center;
+}
+
+.hero-content h1{
+  font-size:6rem;
+  max-width:900px;
+  line-height:1.1;
+  font-weight:900;
+  margin-bottom:50px;
+}
+
+/* BUTTON */
+.hero-btn{
+  text-decoration:none;
+  background:#d9d9d9;
+  color:#031b4e;
+  padding:16px 70px;
+  border-radius:40px;
+  font-size:2rem;
+  font-weight:700;
+  transition:0.3s;
+}
+
+.hero-btn:hover{
+  background:white;
+  transform:translateY(-3px);
+}
+
+/* PROGRAM SECTION */
+.programs{
+  width:100%;
+  padding:60px 20px 100px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* TITLE */
+.programs h2{
+  color:black;
+  font-size:3rem;
+  margin-bottom:60px;
+}
+
+/* CARD */
+.program-card{
+  width:100%;
+  max-width:680px;
+  background:black;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* IMAGE */
+.program-card img{
+  width:100%;
+  height:450px;
+  object-fit:cover;
+}
+
+/* CONTENT */
+.program-content{
+  padding:40px;
+  text-align:center;
+}
+
+.program-content h3{
+  font-size:2.4rem;
+  margin-bottom:35px;
+}
+
+.program-content p{
+  font-size:1.5rem;
+  line-height:1.7;
+  max-width:500px;
+  margin:auto;
+  font-weight:600;
+}
+
+.program-content hr{
+  border:none;
+  height:1px;
+  background:#cfcfcf;
+  margin:40px 0;
+}
+
+/* FOOTER */
+.program-footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.program-footer span{
+  font-size:1.3rem;
+  font-weight:700;
+}
+
+/* DETAILS BUTTON */
+.details-btn{
+  text-decoration:none;
+  background:#d9d9d9;
+  color:#031b4e;
+  padding:12px 30px;
+  border-radius:20px;
+  font-size:1.3rem;
+  font-weight:700;
+  transition:0.3s;
+}
+
+.details-btn:hover{
+  background:white;
+}
+
+/* FOOTER */
+.footer{
+  background:#031b4e;
+  width:100%;
+  padding:40px 80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+
+/* LEFT */
+.footer-left{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.footer-left a{
+  color:white;
+  text-decoration:none;
+}
+
+/* RIGHT */
+.footer-right{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+/* SOCIAL */
+.social{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:1.2rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+  .hero-content h1{
+    font-size:4rem;
+  }
+
+  .program-content h3{
+    font-size:2rem;
+  }
+
+  .program-content p{
+    font-size:1.2rem;
+  }
+
+  .program-footer{
+    flex-direction:column;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    height:auto;
+    padding:20px;
+    gap:20px;
+  }
+
+  .nav-links{
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero{
+    height:500px;
+  }
+
+  .hero-content h1{
+    font-size:3rem;
+    padding:0 20px;
+  }
+
+  .hero-btn{
+    font-size:1.3rem;
+    padding:14px 40px;
+  }
+
+  .programs h2{
+    font-size:2rem;
+  }
+
+  .footer{
+    flex-direction:column;
+    gap:40px;
+    padding:40px;
+  }
+
 }
