@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LUMEN Planetárium</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../code/programs.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+
+    <div class="logo">
+      <img src="logo.png" alt="LUMEN Logo" class="logo-img">
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../code/programs.html">Programok</a></li>
+        <li><a href="../code/tickets.html">Jegyek</a></li>
+        <li><a href="../code/gallery.html">Galéria</a></li>
+        <li><a href="../code/About.html">Rólunk</a></li>
+        <li><a href="../code/contact.html">Kapcsolat</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="container program-page">
+
+    <h1 class="page-title">Aktuális Programjaink</h1>
+
+
+
+    <section class="program-card">
+      <div class="program-img">
+        <img src="../media/feketelyuk.png" alt="Az univerzum sötét oldala">
+      </div>
+
+      <div class="program-info bg-black-custom">
+        <h2>AZ UNIVERZUM SÖTÉT OLDALA</h2>
+
+        <p>
+          Fedezd fel a fekete lyukak titokzatos világát!
+          Egy lenyűgöző utazás során megismerheted az univerzum legerősebb és legveszélyesebb objektumait.
+        </p>
+
+        <div class="program-bottom">
+          <span class="time">Időpont: 2026. május 28. • 19:30</span>
+
+          <span class="age">10+</span>
+
+          <button class="details-btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            Részletek
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="program-card">
+      <div class="program-img">
+        <img src="../media/roboboy.png" alt="Űr ovi">
+      </div>
+
+      <div class="program-info bg-blue-custom">
+        <h2>ŰR OVI</h2>
+
+        <p>
+          Interaktív, mesélős előadás a legkisebbeknek.
+          Egy űrhajóssal fedezik fel az űrt és a bolygókat közös énekléssel és játékokkal.
+        </p>
+
+        <div class="program-bottom">
+          <span class="time">Időpont: szombat 10:30 – 11:30</span>
+
+          <span class="age">3–7</span>
+
+          <button class="details-btn" data-bs-toggle="modal" data-bs-target="#modal2">
+            Részletek
+          </button>
+        </div>
+      </div>
+    </section>
+
+  
+
+    <section class="program-card">
+      <div class="program-img">
+        <img src="../media/randi.png"Randi az ismeretlenben">
+      </div>
+
+      <div class="program-info bg-navy-custom">
+        <h2>RANDI AZ ISMERETLENBEN</h2>
+
+        <p>
+          Pároknak szóló exkluzív est csillagképekhez kapcsolódó szerelmi legendákkal,
+          hullócsillag-nézéssel és egy pohár pezsgővel.
+        </p>
+
+        <div class="program-bottom">
+          <span class="time">Időpont: minden hónap első hétvégéjén</span>
+
+          <span class="age">18+</span>
+
+          <button class="details-btn" data-bs-toggle="modal" data-bs-target="#modal3">
+            Részletek
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="program-card">
+      <div class="program-img">
+        <img src="../media/menobolygo.png" alt="Utazás a kozmosz peremére">
+      </div>
+
+      <div class="program-info bg-black-custom">
+        <h2>UTAZÁS A KOZMOSZ PEREMÉRE</h2>
+
+        <p>
+          Tudományosan pontos és látványos utazás
+          a Naprendszer bolygóitól egészen a távoli galaxisokig.
+        </p>
+
+        <div class="program-bottom">
+          <span class="time">Időpont: minden nap 17:00 – 18:00</span>
+
+          <span class="age">12+</span>
+
+          <button class="details-btn" data-bs-toggle="modal" data-bs-target="#modal4">
+            Részletek
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="program-card">
+      <div class="program-img">
+        <img src="../media/naprendsezer.jpg" alt="A vörös törpe titka">
+      </div>
+
+      <div class="program-info bg-brown-custom">
+        <h2>A VÖRÖS TÖRPE TITKA</h2>
+
+        <p>
+          Utazás egy különleges csillagtípus világába,
+          ahol kiderül, miért lehetnek a vörös törpék az élet keresésének fontos célpontjai.
+        </p>
+
+        <div class="program-bottom">
+          <span class="time">Időpont: vasárnap 15:00 – 15:45</span>
+
+          <span class="age">7+</span>
+
+          <button class="details-btn" data-bs-toggle="modal" data-bs-target="#modal5">
+            Részletek
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <div class="footer-links">
+        <div>© LUMEN Inc.</div>
+        <div>Kapcsolat</div>
+        <div>Rólunk</div>
+      </div>
+
+      <div class="footer-socials">
+        <div><i class="bi bi-instagram"></i> @lumen</div>
+        <div><i class="bi bi-tiktok"></i> @lumen</div>
+        <div><i class="bi bi-facebook"></i> @lumen</div>
+        <div><i class="bi bi-twitter-x"></i> @lumen</div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <div class="modal fade" id="modal1" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h5 class="modal-title">Az univerzum sötét oldala</h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+        </div>
+
+        <div class="modal-body">
+
+          A fekete lyukak olyan erős gravitációval rendelkeznek,
+
+          hogy még a fény sem tud kijutni belőlük.
+
+          A legtöbb galaxis közepén – köztük a Tejútrendszerében is –
+
+          található egy szupermasszív fekete lyuk.
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="modal fade" id="modal2" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h5 class="modal-title">Űr Ovi</h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+        </div>
+
+        <div class="modal-body">
+
+          Tudtad, hogy a Holdon sokkal magasabbra tudnál ugrani?
+
+          Az ottani gravitáció csak körülbelül egyhatoda a földinek.
+
+          Egy űrhajós ott szinte lassított felvételben mozogna.
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="modal fade" id="modal3" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h5 class="modal-title">Randi az ismeretlenben</h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+        </div>
+
+        <div class="modal-body">
+
+          Az ókori civilizációk szerelmi történeteket,
+
+          isteneket és legendákat láttak bele a csillagképekbe.
+
+          Az égbolt évszázadokon keresztül az emberiség egyik legfontosabb történetmesélő felülete volt.
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="modal fade" id="modal4" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h5 class="modal-title">Utazás a kozmosz peremére</h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+        </div>
+
+        <div class="modal-body">
+
+          Ha egy autóval indulnál el a Nap felé 130 km/h sebességgel,
+
+          nagyjából 130 évig tartana az út.
+
+          A világűr méretei annyira hatalmasak,
+
+          hogy az emberi agy számára szinte felfoghatatlanok.
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="modal fade" id="modal5" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h5 class="modal-title">A vörös törpe titka</h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+        </div>
+
+        <div class="modal-body">
+
+          A vörös törpék a világegyetem leggyakoribb csillagai.
+
+          Sok közülük billió évig is élhet,
+
+          ami jóval hosszabb idő, mint ameddig a Napunk létezni fog.
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="modal fade" id="modal5" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Miért különlegesek a vörös törpék?</h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          A vörös törpék kisebbek és hűvösebbek a Napnál,
+          viszont rendkívül hosszú ideig élnek.
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
