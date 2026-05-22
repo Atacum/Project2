@@ -1,170 +1,111 @@
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  background: #ffffff;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+
+body{
+    background:#ececec;
+    font-family:Arial, sans-serif;
+}
+
 
 /* HEADER */
 
-.site-header,
-.site-footer {
-  background: #102442;
+.navbar{
+    background:#061B47;
+    padding:15px 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-.logo {
-  width: 125px;
-  height: auto;
+.logo-img{
+    width:80px;
 }
 
-.nav-link {
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 800;
-  margin: 0 10px;
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
 }
 
-.nav-link:hover {
-  color: #d8e4f4;
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+
+    transition:0.3s;
 }
 
-/* MAIN */
+/* Hover kék árnyalat */
 
-main {
-  flex: 1;
+.nav-links a:hover{
+    color:#5ea2ff;
 }
 
-.about-box {
-  max-width: 1160px;
-  background: #d7e0ec;
-  border-radius: 18px;
-  margin: 24px auto 0;
-  padding: 45px 32px 28px;
+
+/* KÖZÉPSŐ KÁRTYA */
+
+.about-container{
+
+    max-width:900px;
+    margin:50px auto;
+
+    background:#d6dce8;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    text-align:center;
 }
 
-.about-box h1 {
-  font-size: 32px;
-  font-weight: 900;
-  margin-bottom: 24px;
+.about-container h1{
+    font-size:36px;
+    margin-bottom:25px;
+    font-weight:bold;
 }
 
-.lead-text {
-  max-width: 870px;
-  margin: 0 auto 38px;
-  font-size: 20px;
-  line-height: 1.25;
+.intro{
+    max-width:700px;
+    margin:auto;
+    font-weight:600;
 }
 
-.info-title {
-  font-size: 20px;
-  font-weight: 900;
-  text-align: center;
-  margin-bottom: 14px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid #555555;
+.about-container ul{
+    text-align:left;
+    display:inline-block;
 }
 
-.info-list {
-  display: inline-block;
-  text-align: left;
-  font-size: 20px;
-  line-height: 1.15;
+.bottom-line{
+    margin-top:50px;
 }
 
-.bottom-line {
-  border-top: 3px solid #7c7777;
-  margin-top: 135px;
-  padding-top: 12px;
-  font-size: 19px;
-  text-align: center;
+.bottom-text{
+    margin-top:25px;
+    font-weight:700;
 }
+
 
 /* FOOTER */
 
-.site-footer {
-
-  background: #102442;
-
-  border-top: 3px solid #008cff;
-
-  color: #ffffff;
-
-  padding: 12px 0 16px;
-
-  font-size: 12px;
-
+.footer{
+    background:#061B47;
+    color:white;
 }
 
-.footer-left {
-
-  text-align: center;
-
-  line-height: 1.8;
-
-  margin-top: 12px;
-
+.footer a{
+    text-decoration:none;
+    color:white;
 }
 
-.social-row {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 14px;
-
-  margin-bottom: 10px;
-
+.footer a:hover{
+    color:#5ea2ff;
 }
 
-.social-row i {
-
-  font-size: 24px;
-
-  color: #ffffff;
-
-  width: 26px;
-
-  text-align: center;
-
+.social-icons i{
+    margin-right:10px;
+    font-size:22px;
 }
-
-.social-row span {
-
-  font-size: 12px;
-
-  font-weight: 700;
-
-  /* RESPONSIVE */
-
-  @media (max-width: 768px) {
-
-    .navbar-nav {
-      text-align: center;
-    }
-
-    .about-box {
-      margin: 18px 15px;
-      padding: 32px 22px;
-    }
-
-    .lead-text,
-    .info-list,
-    .bottom-line {
-      font-size: 16px;
-    }
-
-    .bottom-line {
-      margin-top: 60px;
-    }
-
-    .footer-left {
-      margin-top: 10px;
-    }
-
-    .social-row {
-      justify-content: center;
-    }
-  }
