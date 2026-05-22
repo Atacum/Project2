@@ -216,7 +216,9 @@ footer{
   font-size:1.3rem;
   font-weight:700;
   transition:0.3s;
-  align-items:"right"
+  display: flex;
+  align-items: right;
+  margin-left: auto;
 }
 
 .details-btn:hover{
