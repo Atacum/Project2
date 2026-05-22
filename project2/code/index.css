@@ -207,11 +207,9 @@ footer{
 }
 /* DETAILS BUTTON */
 .details-btn{
-  padding-left: 20;
   text-decoration:none;
   background:#d9d9d9;
   color:#031b4e;
-  padding:12px 30px;
   border-radius:20px;
   font-size:1.3rem;
   font-weight:700;
@@ -219,6 +217,7 @@ footer{
   display: flex;
   align-items: right;
   margin-left: auto;
+  padding-left:12px
 }
 
 .details-btn:hover{
