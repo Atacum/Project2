@@ -55,6 +55,7 @@ body{
   width:100%;
   height:650px;
   background-image:url('../media/lilaur.jpg');
+  background-size:cover;
   display:flex;
   justify-content:center;
   align-items:center;
