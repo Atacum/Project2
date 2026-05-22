@@ -6,15 +6,19 @@
 
 body{
     background:#ececec;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 
 /* HEADER */
 
 .navbar{
+
     background:#061B47;
-    padding:15px 50px;
+
+    height:60px;
+
+    padding:0 20px;
 
     display:flex;
     justify-content:space-between;
@@ -22,69 +26,78 @@ body{
 }
 
 .logo-img{
-    width:80px;
+    width:55px;
 }
 
 .nav-links{
     display:flex;
+    gap:15px;
     list-style:none;
-    gap:30px;
+    margin:0;
 }
 
 .nav-links a{
     color:white;
     text-decoration:none;
+    font-size:11px;
     font-weight:600;
 
-    transition:0.3s;
+    transition:0.3s ease;
 }
 
-/* Hover kék árnyalat */
+/* hover kék árnyalat */
 
 .nav-links a:hover{
-    color:#5ea2ff;
+    color:#5EA2FF;
 }
 
 
-/* KÖZÉPSŐ KÁRTYA */
+
+/* TARTALOM */
 
 .about-container{
 
-    max-width:900px;
-    margin:50px auto;
+    max-width:700px;
 
-    background:#d6dce8;
-
-    border-radius:18px;
+    margin:35px auto;
 
     padding:40px;
+
+    background:#d8deea;
+
+    border-radius:20px;
 
     text-align:center;
 }
 
 .about-container h1{
-    font-size:36px;
-    margin-bottom:25px;
-    font-weight:bold;
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:20px;
 }
 
 .intro{
-    max-width:700px;
-    margin:auto;
+    font-size:14px;
     font-weight:600;
+    line-height:1.6;
+}
+
+.about-container h4{
+    font-size:18px;
 }
 
 .about-container ul{
-    text-align:left;
     display:inline-block;
+    text-align:left;
+    margin-top:15px;
 }
 
 .bottom-line{
-    margin-top:50px;
+    margin-top:40px;
 }
 
 .bottom-text{
-    margin-top:25px;
+    margin-top:20px;
     font-weight:700;
 }
 
@@ -92,20 +105,32 @@ body{
 /* FOOTER */
 
 .footer{
+
     background:#061B47;
     color:white;
+
+    min-height:130px;
+}
+
+.footer p{
+    font-size:10px;
+    margin-bottom:8px;
 }
 
 .footer a{
-    text-decoration:none;
     color:white;
+    text-decoration:none;
 }
 
 .footer a:hover{
-    color:#5ea2ff;
+    color:#5EA2FF;
+}
+
+.social-icons p{
+    margin-bottom:10px;
 }
 
 .social-icons i{
-    margin-right:10px;
-    font-size:22px;
+    margin-right:8px;
+    font-size:18px;
 }
