@@ -75,6 +75,11 @@ body{
   text-align:center;
 }
 
+.program-footer{
+  display:flex;
+  text-align:"left";
+}
+
 .hero-content h1{
   font-size:6rem;
   max-width:900px;
