@@ -77,7 +77,7 @@ body{
 
 .program-footer{
   display:flex;
-  text-align:"left";
+  text-align:space-between;
 }
 
 .hero-content h1{
