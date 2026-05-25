@@ -202,62 +202,63 @@ h1 {
     padding: 10px;
 }
 
-/* .also-row
-.felso-row {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+
+
+ .containerg{
+    display:grid;
+    grid-template-columns: repeat(3, 321px);
+    gap:60px 80px;
+    justify-content:center;
+    margin-top:60px;
 }
 
-.cards{
-    display:grid;
-    grid-template-columns: repeat(3, 320px);
-    justify-content:center;
-    gap:50px 70px;
-  }
-
-  .card{
+/* KÁRTYÁK */
+.containerg > div{
     border-radius:20px;
     overflow:hidden;
-    background:white;
-    box-shadow:0 4px 12px rgba(0,0,0,0.15);
     transition:0.3s;
     cursor:pointer;
-  }
-
-  .card:hover{
-    transform:translateY(-5px);
-  }
- */
-
- .containerg {
-    display: grid;
-    grid-template-areas: 
-    "a b c"
-    "d e";
- }
-
- .a {
-    grid-area: a;
 }
 
-.b {
-    grid-area: b;
+.containerg > div:hover{
+    transform:translateY(-6px);
 }
 
- .c {
-    grid-area: c;
- }
+/* ALSÓ 2 KÉP KÖZÉPRE */
+.d{
+    grid-column:1 / 2;
+    justify-self:end;
+}
 
- .d {
-    grid-area: d;
- }
+.e{
+    grid-column:3 / 4;
+    justify-self:start;
+}
 
- .e {
-    grid-area: e;
- }
+/* MOBIL */
+@media(max-width:1100px){
+
+    .containerg{
+        grid-template-columns: repeat(2, 321px);
+    }
+
+    .d,
+    .e{
+        grid-column:auto;
+        justify-self:center;
+    }
+}
+
+@media(max-width:700px){
+
+    .containerg{
+        grid-template-columns: 321px;
+    }
+}
+
+
 
  section {
   display: block;
-  height: 1000px;
+  height: 700px;
  }
