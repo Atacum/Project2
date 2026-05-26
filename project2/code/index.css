@@ -218,7 +218,7 @@ footer{
   display: flex;
   align-items: right;
   margin-left: auto;
-  padding-left:12px
+  padding: 10px 26px;
 }
 
 .details-btn:hover{
