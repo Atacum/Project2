@@ -206,10 +206,10 @@ h1 {
 
  .containerg{
     display:grid;
-    grid-template-columns: repeat(3, 321px);
+    grid-template-columns: repeat(12, 321px);
     gap:60px 80px;
-    justify-content:center;
     margin-top:60px;
+    justify-content: center;
 }
 
 /* KÁRTYÁK */
@@ -218,21 +218,26 @@ h1 {
     overflow:hidden;
     transition:0.3s;
     cursor:pointer;
+    justify-content: center;
 }
 
 .containerg > div:hover{
     transform:translateY(-6px);
 }
 
-/* ALSÓ 2 KÉP KÖZÉPRE */
+.a {
+  grid-column:   ;
+}
+
+
 .d{
-    grid-column:1 / 2;
+    grid-column:1 / 1;
     justify-self:end;
 }
 
 .e{
-    grid-column:3 / 4;
-    justify-self:start;
+    grid-column:2 / 4;
+    justify-self:end;
 }
 
 /* MOBIL */
@@ -246,6 +251,7 @@ h1 {
     .e{
         grid-column:auto;
         justify-self:center;
+        
     }
 }
 
@@ -255,8 +261,6 @@ h1 {
         grid-template-columns: 321px;
     }
 }
-
-
 
  section {
   display: block;
