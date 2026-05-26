@@ -16,6 +16,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+    border-bottom: 3px solic #00a2ff;
 }
 
 /* Whole middle area */
@@ -99,12 +100,14 @@ body {
     .about-card{
         width:90%;
         padding:25px;
+        object-fit: contain;
     }
 }
 
 
 .logo-img {
-    width: 70px;
+    width: auto;
+    height: 70px;
 }
 
 .nav-links {
