@@ -1,5 +1,8 @@
-* {
-  /* display: grid  ; */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 img {
@@ -206,10 +209,12 @@ h1 {
 
  .containerg{
     display:grid;
-    grid-template-columns: repeat(12, 321px);
-    gap:60px 80px;
-    margin-top:60px;
+    grid-template-columns: repeat(12, 160px);
+    gap:60px 1px;
+    margin-top:200px;
     justify-content: center;
+    width: 1200px;
+    margin: auto;
 }
 
 /* KÁRTYÁK */
@@ -226,17 +231,24 @@ h1 {
 }
 
 .a {
-  grid-column:   ;
+  grid-column:2 / 4;
 }
 
+.b {
+  grid-column:6 / 8;
+}
+
+.c {
+  grid-column:10  / 12;
+}
 
 .d{
-    grid-column:1 / 1;
+    grid-column:4 / 6;
     justify-self:end;
 }
 
 .e{
-    grid-column:2 / 4;
+    grid-column:8 / 10;
     justify-self:end;
 }
 
